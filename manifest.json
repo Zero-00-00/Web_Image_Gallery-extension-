@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Image Viewer Gallery",
+  "version": "2.6",
+  "description": "Extracts and previews images from supported with rotation and navigation.",
+  "permissions": ["scripting", "tabs", "activeTab", "storage", "declarativeNetRequest", "declarativeNetRequestWithHostAccess"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["viewer.html", "viewer.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+    "id": "referer-fix",
+    "enabled": true,
+    "path": "rules.json"
+  }]
+  }
+}
