@@ -33,3 +33,17 @@ Pixiv-> After opening the directory of images
 Unsplash-> In the Home Feed
 
 Pexels-> In the Home Feed
+
+HOW TO USE:
+
+Download the repo
+
+extract
+
+in your browser, in manage extension, enable developer mode
+
+load unpacked
+
+select the extracted repo
+
+you are ready to use the extension
